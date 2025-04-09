@@ -1,2 +1,2 @@
 # react-todo
-Learning React by doing. 
+Exercising my React 19. Creating a todo-app. 
