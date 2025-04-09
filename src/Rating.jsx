@@ -7,7 +7,6 @@ function Rating(props) {
     const [rating, setRating] = useState(props.rating)
     return (
         <div className="rating" style={styles.starStyle}>
-            <h1>Rating:{rating}</h1>
             {rating >= 1 ? <IoIosStar onClick={() => setRating(1)} /> : <IoIosStarOutline onClick={()=> setRating(1)}/>}
             {rating >= 2 ? <IoIosStar onClick={() => setRating(2)} /> : <IoIosStarOutline onClick={()=> setRating(2)}/>}
             {rating >= 3 ? <IoIosStar onClick={() => setRating(3)} /> : <IoIosStarOutline onClick={()=> setRating(3)}/>}
@@ -21,12 +20,10 @@ function Rating(props) {
 export default Rating
 
 const styles = {
-    rating: {
-        alignItems: 'center',
-        width: '200px',
-        margin: '0 auto'
-    },
     starStyle: {
         color: 'orange',
+        fontSize: '15x',
+        margin: '0 5px',
+        cursor: 'pointer'
     }
 }

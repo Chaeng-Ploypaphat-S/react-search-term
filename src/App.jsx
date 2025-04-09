@@ -1,16 +1,15 @@
 import React from 'react'
 import Products from './Products'
-import Rating from './Rating'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
+import Jumbotron from './Jumbotron'
 
-function formatName(user){
-    return user.firstName + ' ' + user.lastName
-}
 function App() {
   return (
     <div>
         <Products />
+        <Jumbotron>
+          This is a long sentence, and I want to insert content into the jumbotron.
+        </Jumbotron>
     </div>
   )
 }
