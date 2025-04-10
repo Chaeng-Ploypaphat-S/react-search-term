@@ -1,2 +1,2 @@
-# react-todo
-Exercising my React 19 creating a todo-list. 
+# react-search-term
+Exercising my React 19 creating a search page. 
